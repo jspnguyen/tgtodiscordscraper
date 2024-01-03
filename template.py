@@ -3,14 +3,14 @@ from discord_webhook import DiscordWebhook
 
 # Telegram API credentials
 API_ID, API_HASH, SESSION_NAME = "API_ID", "API_HASH", "SESSION_NAME"
+TG_CHANNEL_ID_1 = "CHANNEL_ID_1"
 
 # Initialize the Telegram client
 client = TelegramClient(SESSION_NAME, API_ID, API_HASH)
 
 # Chat and Webhook Configurations
 CHAT_WEBHOOK_PAIRS = {
-    -1001633638375: 'https://discord.com/api/webhooks/your_webhook_url_1',
-    -1001980371409: 'https://discord.com/api/webhooks/your_webhook_url_2',
+    TG_CHANNEL_ID_1: 'https://discord.com/api/webhooks/your_webhook_url_1',
     # Add more pairs as needed
 }
 
